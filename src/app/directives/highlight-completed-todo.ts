@@ -1,7 +1,8 @@
-import { Directive, ElementRef, effect, inject, input } from '@angular/core';
+import {Directive, effect, ElementRef, inject, input} from '@angular/core';
 
 @Directive({
   selector: '[appHighlightCompletedTodo]',
+  standalone: true
 })
 export class HighlightCompletedTodo {
   isCompleted = input<boolean>(false);

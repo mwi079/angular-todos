@@ -1,8 +1,9 @@
-import { Component, signal } from '@angular/core';
+import {Component, signal} from '@angular/core';
 
 @Component({
   selector: 'app-counter',
   imports: [],
+  standalone: true,
   template: `
     <p>counter value :{{ counterValue() }}</p>
     <div>

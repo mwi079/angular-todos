@@ -1,8 +1,9 @@
-import { Component, input } from '@angular/core';
+import {Component, input} from '@angular/core';
 
 @Component({
   selector: 'app-greeting',
   imports: [],
+  standalone: true,
   template: `
     <h1>Greetings!</h1>
     <p>{{ message() }}</p>

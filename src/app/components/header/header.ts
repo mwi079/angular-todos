@@ -1,9 +1,10 @@
-import { Component, signal } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import {Component, signal} from '@angular/core';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-header',
   imports: [RouterLink],
+  standalone: true,
   template: `
     <header>
       <nav>
@@ -26,24 +27,29 @@ import { RouterLink } from '@angular/router';
       background-color: #000;
       color: #fff;
     }
+
     span {
       font-size: 24px;
       font-weight: bold;
     }
+
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+
     ul {
       display: flex;
       list-style: none;
       gap: 16px;
     }
-    a{
+
+    a {
       color: #fff;
       text-decoration: none;
       cursor: pointer;
+
       &:hover {
         color: #ccc;
       }
